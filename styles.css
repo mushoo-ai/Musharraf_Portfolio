@@ -103,3 +103,25 @@ nav {
 html {
     scroll-behavior: smooth;
 }
+.front_end {
+    width: 20px;
+}
+.nav-links a.active {
+    color: #ff6347;
+    font-weight: bold;
+    border-bottom: 2px solid #ff6347;
+}
+/* Page fade effect */
+main.fade-in {
+    animation: fadeInMain 0.5s ease-in;
+}
+
+main.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+@keyframes fadeInMain {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
