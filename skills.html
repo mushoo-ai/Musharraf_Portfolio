@@ -4,36 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Skills</title>
-     <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <!-- Navigation Bar -->
-        <nav class="nav-links">
-            <div class="logo">Musharraf Hussain</div>
+        <nav>
+            <a href="index.html" class="logo">Musharraf Hussain</a>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="skills.html" class="active">Skills</a></li> <!-- Add class="active" -->
+                <li><a href="skills.html" class="active">Skills</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="videos.html">Videos</a></li>
             </ul>
+            <div class="nav-overlay"></div>
         </nav>
     </header>
     <main>
         <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Front-End (HTML,CSS,JavaScript,Graphic Deigning).<a class="front_end" href src="https://www.coursera.com">(link)</a></li>
-            <li>AI & Machine Learning</li>
-            <li>Data Science & Deep Learning</li>
-            <li>Oracle SQL</li>
-            <li>Data Structure & Algorithm (DSA)</ul>
-        </ul>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Front-End (HTML,CSS,JavaScript,Graphic Deigning).<a class="front_end" href="https://www.coursera.com">(link)</a></li>
+                <li>AI & Machine Learning</li>
+                <li>Data Science & Deep Learning</li>
+                <li>Oracle SQL</li>
+                <li>Data Structure & Algorithm (DSA)</li>
+            </ul>
+        </section>
     </main>
     <footer>
-
+        <p>&copy; 2025 Musharraf Hussain</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
