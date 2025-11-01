@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="index.html" class="logo">Musharraf Hussain</a>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="course.html" class="active">Videos</a></li>
+            </ul>
+            <div class="nav-overlay"></div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero / Courses Listing -->
+        <section class="hero">
+            <div class="hero-inner">
+                <h1>Learn Computer Networks</h1>
+                <p class="lead">Practical lectures in English & Urdu — start with Lecture 1.</p>
+                <p>
+                    <a class="btn" href="computer_networks.html">Open Computer Network Course</a>
+                </p>
+            </div>
+            <div class="hero-graphic" aria-hidden="true"></div>
+        </section>
 
+        <section class="courses-list">
+            <h2>Available Courses</h2>
+            <div class="cards">
+                <article class="card course-card">
+                    <div class="card-media" aria-hidden="true"></div>
+                    <div class="card-body">
+                        <h3>Computer Network</h3>
+                        <p>Lecture 1 available in English and Urdu. Click to view the full lecture and language controls.</p>
+                        <div class="card-actions">
+                            <a class="btn" href="computer_networks.html">View Course</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Add other course cards here in the future -->
+            </div>
+        </section>
+    </main>
+        <!-- Courses Section removed: videos moved to computer_networks.html -->
+    </main>
+    <footer>
+        <p>&copy; 2025 Musharraf Hussain</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
