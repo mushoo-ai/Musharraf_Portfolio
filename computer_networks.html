@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networks — Lectures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Musharraf Hussain</a>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="computer_networks.html" class="active">Videos</a></li>
+            </ul>
+            <div class="nav-overlay"></div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="course-hero">
+            <div class="container">
+                <h2>Computer Network</h2>
+                <p class="lead">Lecture 1 — Introduction to Computer Networks. Use the language buttons below to switch between English and Urdu sources.</p>
+
+                <div class="player-wrap">
+                    <div class="player">
+                        <video id="main-video" controls controlsList="nodownload nofullscreen noremoteplayback" preload="metadata">
+                            <source id="video-source" src="Intro_to_Computer_Networks.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="watermark">Musharraf Hussain</div>
+                    </div>
+
+                    <div class="player-controls">
+                        <div class="lang-buttons">
+                            <button class="btn lang-btn active" data-src="Intro_to_Computer_Networks.mp4" data-lang="en">English</button>
+                            <button class="btn lang-btn" data-src="Intro_to_Computer_Networks_ur.mp4" data-lang="ur">Urdu</button>
+                        </div>
+                        <p class="note">Download disabled. If a video doesn't load, make sure the file exists in the same folder or update the source file names.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Musharraf Hussain</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Extra protection: disable context menu on the whole page for safety,
+        // and block common save shortcuts (Ctrl+S / Cmd+S) to make downloading harder.
+        document.addEventListener('DOMContentLoaded', function() {
+            // Disable right-click on videos (already prevented on elements) and on page
+            document.addEventListener('contextmenu', function(e) {
+                if (e.target.tagName === 'VIDEO' || e.target.closest && e.target.closest('video')) {
+                    e.preventDefault();
+                }
+            });
+
+            // Prevent Ctrl+S / Cmd+S
+            document.addEventListener('keydown', function(e) {
+                if ((e.ctrlKey || e.metaKey) && e.key && e.key.toLowerCase() === 's') {
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
 
